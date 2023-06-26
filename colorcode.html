@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            background-color: rgb(25, 24, 24);
+        }
+        body h1{
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(316px, 0fr));
+            row-gap: 10px;
+            /* margin-left: 31px; */
+            justify-self: center;
+        }
+
+        .card {
+            height: 300px;
+            width: 230px;
+            border: 2px solid;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card1{
+            background-color: #8d3daf;
+        }
+        .card2{
+            background-color: #e07c24;
+        }
+        .card3{
+            background-color: #758283;
+        }
+        .card4{
+            background-color: #e03b8b;
+        }
+        .card5{
+            background-color:#ff6666 ;
+        }
+        .card6{
+            background-color: #03c6c7;
+        }
+        .card7{
+            background-color: #cad5e2;
+        }
+        .card8{
+            background-color: #35bdd0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Feeling Fancy</h1>
+    <div class="container">
+        <div class="card card1">#8D3DAF</div>
+        <div class="card card2">#e07c24</div>
+        <div class="card card3">#758283</div>
+        <div class="card card4">#e03b8b</div>
+        <div class="card card5">#ff6666</div>
+        <div class="card card6">#03c6c7</div>
+        <div class="card card7">#cad5e2</div>
+        <div class="card card8">#35bdd0</div>
+    </div>
+</body>
+
+</html>

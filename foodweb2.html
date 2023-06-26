@@ -1,0 +1,254 @@
+<!-- Q1-Q5 done in this code in a single webpage -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "section section section"
+                "footer footer footer";
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+
+            grid-area: header;
+        }
+
+        .navbar a {
+            margin: 16px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .login {
+            margin-right: 15px;
+            border: 1px greenyellow;
+        }
+
+        .login button {
+            padding: 1px 12px;
+            background-color: greenyellow;
+            border-radius: 8px;
+        }
+
+        .text {
+            font-size: 23px;
+            justify-self: center;
+            align-self: center;
+            width: 57rem;
+        }
+
+        .photo {
+            width: 29rem;
+            background-color: yellow;
+            height: 25rem;
+        }
+
+        section {
+            display: grid;
+            grid-area: section;
+            margin-top: 4px;
+
+            grid-template-areas:
+                "text text photo"
+                "track track track"
+                "card card card";
+        }
+
+        footer {
+            grid-area: footer;
+
+        }
+
+        .track {
+            grid-area: track;
+            margin: 10px;
+            justify-self: center;
+        }
+
+        .track img {
+            height: 317px;
+            width: 100vw;
+        }
+
+        .card {
+
+            height: 232px;
+            width: 227px;
+            border: 1px solid;
+            margin: 0 111px;
+            border-radius: 46px;
+            text-align: center;
+        }
+
+        .card-holder {
+            grid-area: card;
+            display: flex;
+            justify-self: center;
+        }
+
+        .read-btn {
+            background-color: black;
+            color: white;
+            padding: 6px 15px;
+        }
+
+        .card3 img {
+            border-radius: 31px 31px 0 0;
+            width: 229px;
+        }
+
+        .card2 img {
+            border-radius: 31px 31px 0 0;
+            width: 229px;
+        }
+
+        .card1 img {
+            border-radius: 31px 31px 0 0;
+            width: 228px;
+            height: 113px;
+        }
+
+        footer {
+            display: grid;
+            grid-template-areas:
+                "image nav-links last-bar"
+                "para para para";
+            margin: 21px;
+            margin-top: 9px;
+            background-color: rgb(47 27 0);
+        }
+
+        .image {
+            grid-area: image;
+        }
+
+        .nav-links {
+            grid-area: nav-links;
+        }
+
+        .last-bars {
+            grid-area: last-bar;
+        }
+
+        .nav-links li {
+            list-style: none;
+            padding: 6px;
+            color: #d6ae75;
+        }
+
+        .last-bars li {
+            list-style: none;
+            padding: 6px;
+            color: #d6ae75;
+        }
+
+        footer h1 {
+            color: white;
+        }
+
+        footer p {
+            grid-area: para;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="" alt="err">
+            </div>
+            <div class="navbar">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="login">
+                <button>login</button>
+            </div>
+        </div>
+        <section>
+            <div class="text">
+                <h3>Healthy food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odio quas distinctio unde. Rem
+                    deleniti molestias repellendus aspernatur sapiente, voluptas asperiores. Eligendi amet quidem minima
+                    enim vero, ad doloribus corrupti pariatur nisi fuga minus laboriosam vitae? Dolore doloremque
+                    quaerat molestiae labore at provident accusantium sit magni et suscipit, fuga officiis esse itaque
+                    nihil est adipisci odit dolorum consequatur ullam nulla!</p>
+                <button class="read-btn">Read More</button>
+
+            </div>
+            <div class="photo">
+                <img src="Screenshot 2023-06-17 202849.png">
+
+            </div>
+            <div class="track">
+                <img src="Screenshot 2023-06-17 202950.png">
+            </div>
+            <div class="card-holder">
+                <div class="card card1">
+                    <img src="Screenshot 2023-06-17 203008.png">
+                    <h2>Order Online</h2>
+                    <p>stay home and order to your doorstep!</p>
+
+                </div>
+                <div class="card card2">
+                    <img src="Screenshot 2023-06-17 203029.png">
+                    <h2>In-sight Dining</h2>
+                    <p>View the city's favourite dining venues.</p>
+
+                </div>
+                <div class="card card3">
+                    <img src="Screenshot 2023-06-17 203041.png">
+                    <h2>Nightlife & Clubs</h2>
+                    <p>Explore the city's top nightlife outlets & Book tables.</p>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <div class="image">
+                <img src="Screenshot 2023-06-17 203102.png">
+
+            </div>
+            <div class="nav-links">
+                <h1>Navigation links</h1>
+                <ul>
+
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+            <div class="last-bars">
+                <h1>Learn More</h1>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>terms</li>
+                    <li>Sitemaps</li>
+                </ul>
+            </div>
+            <p>Copyrights All Rights Reserved</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>

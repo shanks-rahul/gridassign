@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+    grid-template-columns: repeat(8,minmax(150px,0fr));
+    grid-template-rows: repeat(7,minmax(39px,0fr));
+    text-align: center;
+        }
+        .lab{
+            grid-column: span 2;
+            text-align: center;
+            border: 1px dashed;
+            background-color: gainsboro;
+        }
+        .row{
+            grid-row: span 2;
+            background-color: brown;
+            border: 1px dashed;
+        }
+        
+        .sat{
+            grid-row: span 1.5;
+            border: 1px dashed;
+            height: 32px;
+        }
+        .days{
+            border: 1px dashed;
+            background-color: violet;
+        }
+        .sub{
+            border: 1px dashed;
+            background-color: skyblue;
+        }
+        .game{
+            background-color: green;
+        }
+        .break{
+            background-color: yellow;
+        }
+        .last{
+            border-bottom: 1px dashed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">Time</div>
+        <div class="row">8:00-9:00</div>
+        <div class="row">9:00-10:00</div>
+        <div class="row">10:00-11:00</div>
+        <div class="row">11:00-12:00</div>
+        <div class="row">12:00-2:00</div>
+        <div class="row">2:00-3:00</div>
+        <div class="row">3:00-4:00</div>
+        <div class="days">Monday</div>
+        <div class="sub">English</div>
+        <div class="sub">Biology</div>
+        <div class="sub">Chemistry</div>
+        <div class="sub">physics</div>
+        <div class="break">L</div>
+        <div class="lab">chemistry lab</div>
+        <div class="days">Tuesday</div>
+        <div class="lab">Biology Lab</div>
+        <div class="sub">Physics</div>
+        <div class="sub">chemistry</div>
+        <div class="break">U</div>
+        <div class="sub">Math</div>
+        <div class="sub">English</div>
+        <div class="days">Wednesday</div>
+        <div class="sub">English</div>
+        <div class="sub">biology</div>
+        <div class="sub">Chemistry</div>
+        <div class="sub">Physics</div>
+        <div class="break">N</div>
+        <div class="lab game">Games</div>
+        <div class="days">Thursday</div>
+        <div class="lab">Biology Lab</div>
+        <div class="sub">physics</div>
+        <div class="sub">chemistry</div>
+        <div class="break">C</div>
+        <div class="sub">English</div>
+        
+        <div class="sub">Biology</div>
+        <div class="days">Friday</div>
+        <div class="sub">English</div>
+        <div class="sub">Biology</div>
+        <div class="sub">Chemistry</div>
+        <div class="sub">Physics</div>
+        <div class="break">H</div>
+        <div class="lab">Physics Lab</div>
+        <div class="sat days">Saturday</div>
+        <div class="lab sat">Biology Lab</div>
+        <div class="sat sub">Physics</div>
+        <div class="sat sub">Chemistry</div>
+        <div class="break last">Break</div>
+        <div class="lab sat game">LetOFF</div>
+        
+    </div>
+</body>
+</html>
